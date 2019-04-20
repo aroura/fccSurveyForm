@@ -1,0 +1,80 @@
+body {
+	/*background: #006400;*/
+	background: url("https://res.cloudinary.com/aroura/image/upload/v1539412418/fccBgImg_bqxwlu.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	padding: 35px 0;
+	font-family: Lobster;
+}
+
+p {
+	font-size: 1.5rem;
+}
+
+/*Header Section*/
+.header {
+	/*border: 2px solid #F76300;*/
+	border-radius: 10px;
+	background: rgba(0, 100, 0,.8);
+	max-width: 700px;
+	width: 90%;
+	margin: auto;
+	padding: 20px 0;
+}
+
+#title, #description {
+	color: #FFF;
+	text-align: center;
+}
+
+.fcc {
+	font-size: 1.5em;
+}
+
+/*Survey-form Section*/
+#survey-form {
+	max-width: 700px;
+	width: 90%;
+	margin: 25px auto;
+	border: 2px solid #F76300;
+	border-radius: 10px;
+	padding: 30px;
+	background: rgba(154,205,50,.8);
+}
+
+#number {
+	width: 80px;
+}
+
+#submit {
+	background: #006400;
+	border-radius: 1000px;
+	display: block;
+	margin: 0 auto;	
+	width: 100px;
+}
+
+#submit:hover {
+	transform:scale(1.1);
+	transition-duration: .5s;
+}
+
+/*Footer Section*/
+.footer {
+	text-align: center;
+	font-size: 1.4em;
+	color: #FFF;
+	/*font-family: Raleway;*/
+}
+
+.media-icon {
+	color: rgba(154,205,50);	
+	padding: 0 40px 10px;
+}
+
+.media-icon:hover {
+	color: #F76300;
+	transition-duration: .5s;
+}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- meta tags -->
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>Survey Form</title>
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Lobster|Raleway" rel="stylesheet">
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- FontAwesome -->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- Css -->
+	<link rel="stylesheet" type="text/css" href="surveyForm.css">
+</head>
+
+<body>
+	<div class="container">
+		<div class="header">
+			<h1 id="title">Survey Form</h1>
+			<p id="description">Let us know how we can improve <span class="fcc">freeCodeCamp</span></p>
+		</div>
+		
+			<form id="survey-form">
+				 	 
+				<div class="form-group">
+				 	<label for="name" id="name-label">Name*</label>
+				 		<input type="text" class="form-control" id="name" placeholder="Name" required>
+				</div>
+				<div class="form-group">
+			 	    <label for="email" id="email-label">Email address*</label>
+				 		<input type="email" class="form-control" id="email" placeholder="Email" required>
+				</div>
+				<div class="form-group">
+				 	<label for="number" id="number-label">Age*</label>
+				 		<input type="number" class="form-control" id="number" placeholder="Age" required min="12" max="112" title="Must be at least 12 years of age.">
+				</div>
+		  <!-- different layout -->
+		  		<div class="form-group">
+		  			<p>Which option best describes your current situation?</p>
+				  		<label>
+					  		<select id="dropdown" class="form-control" name="status">
+								<option>Select an option</option>
+								<option value="student">Student</option>
+								<option value="employedPt">Employed Part Time</option>
+								<option value="employedFt">Employed Full Time</option>
+								<option value="FtLearner">Full Time Learner</option>
+								<option value="none">Prefer not to say</option>
+							</select>
+						</label>
+
+					<p>Would you recommend freeCodeCamp to a friend or colleague?</p>
+					<div>
+						<label for="yes">
+							<input id="yes" type="radio" name="recommend" value="yes">
+								Definitely! ヅ
+						</label>
+					</div>
+					<div>
+						<label for="maybe">
+							<input id="maybe" type="radio" name="recommend" value="maybe">
+								Maybe ¯\_(ツ)_/¯
+						</label>
+					</div>
+					<div>
+						<label for="no">
+							<input id="no" type="radio" name="recommend" value="no">
+								Not Really :(
+						</label>
+					</div>
+
+					<p>What do you like most in freeCodeCamp?</p>
+				  		<label>
+					  		<select id="dropdown" class="form-control" name="like">
+								<option>Select an option</option>
+								<option value="challenger">Challenges</option>
+								<option value="projects">Projects</option>
+								<option value="community">Community</option>
+								<option value="openSource">Open Source</option>
+							</select>
+						</label>
+				</div>
+
+				<!-- <div class="checkbox"> -->
+					<p>Things that should be improved in the future (Check all that apply):</p>
+				  	<div>
+				 		<label>
+				    		<input type="checkbox" value="improve">
+				    			Front-end Projects
+				  		</label>
+					</div>
+					<div>
+						<label>
+				    		<input type="checkbox" value="improve">
+				    			Back-end Projects
+				   		</label>
+					</div>
+					<div>
+						<label>
+				    		<input type="checkbox" value="improve">
+				    			Data Visualization
+				  		</label>
+					</div>
+					<div>
+						<label>
+				    		<input type="checkbox" value="improve">
+				    			Challenges
+				  		</label>
+					</div>
+					<div>
+						<label>
+				    		<input type="checkbox" value="improve">
+				    			Open Source Community
+				  		</label>
+					</div>
+					<div>
+						<label>
+				    		<input type="checkbox" value="improve">
+				    			Gitter help rooms
+				  		</label>
+					</div>
+					<div>
+						<label>
+				    		<input type="checkbox" value="improve">
+				    			Videos
+				  		</label>
+					</div>
+					<div>
+						<label>
+				    		<input type="checkbox" value="improve">
+				    			City Meetups
+				  		</label>
+					</div>
+					<div>
+						<label>
+				    		<input type="checkbox" value="improve">
+				    			Wiki
+				  		</label>
+					</div>
+					<div>
+						<label>
+		    				<input type="checkbox" value="improve">
+				    			Forum
+				  		</label>
+					</div>
+					<div>
+						<label>
+				    		<input type="checkbox" value="improve">
+				    			Additional Courses
+				  		</label>
+					</div>
+				<!-- </div> -->
+				<div>
+					<p>Any comments or suggestions?</p>
+					<textarea class="form-control" rows="3" cols="3" placeholder="Enter comments here..."></textarea>
+				</div>
+				<br>
+					<button id="submit" type="submit" class="btn btn-success">Submit</button>
+			</form>
+		<footer>
+			<div class="footer">
+				<a href="#"><i class="fa fa-github media-icon"></i></a>
+				<a href="#"><i class="fa fa-codepen media-icon"></i></a>
+				<a href="#"><i class="fa fa-free-code-camp media-icon"></i></a>
+				<p>&copy 2018 aRoura</p>
+			</div>
+		</footer>
+	</div>
+
+<!-- freeCodecamp test script -->
+<!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+</body>
+</html>
